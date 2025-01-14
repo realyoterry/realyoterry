@@ -1,12 +1,11 @@
 - 👋 Hi, I’m @realyoterry
-- 👀 I’m interested in learning new languages
-- 🌱 I’m currently learning Vanilla JS
-- 💞️ I’m looking to collaborate on GitHub
-- 📫 How to reach me: Send me a PR!
-- 😄 Pronouns: He/him
-- ⚡ Fun fact: I can move my ears.
+- 👀 I’m currently interested in learning new languages.
+- 🌱 I’m interested in learning Node.js, and have created a few projects with it.
+- 💞️ I’m looking to collaborate on GitHub, send me a PR in this repository if you want to!
+- 📫 How to reach me: Send me a PR in this repository!
+- 😄 Pronouns: he/him (boy/male)
+- ⚡ Fun fact: I know more than 6 programming languages!
 
-<!---
-realyoterry/realyoterry is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=realyoterry&theme=dark)
+
+###### ^^ GitHub Stats!
