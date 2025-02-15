@@ -12,7 +12,7 @@ USER_NAME = os.getenv('USER_NAME')
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 if os.getenv('ACCESS_TOKEN'):
-    print("First 3 characters of ACCESS_TOKEN:", access_token[:3])
+    print("First 3 characters of ACCESS_TOKEN:", os.getenv('ACCESS_TOKEN')[:3])
 else:
     print("ACCESS_TOKEN is not set or is empty")
 
