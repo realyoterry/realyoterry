@@ -12,12 +12,7 @@
 ---
 
 <div align="left">
-	<a href="https://github.com/ericaugusto-git/discord-clone">
-		<img src="https://github-readme-stats.vercel.app/api/pin/?username=realyoterry&repo=vidclip&theme=ayu-mirage&hide_border=true" alt="vidclip" />
-	</a>
-	<a href="https://github.com/ericaugusto-git/portfolio">
-		<img src="https://github-readme-stats.vercel.app/api/pin/?username=realyoterry&repo=realyoterry&theme=ayu-mirage&hide_border=true" alt="portfolio" />
-	</a>
+	<a href="https://github.com/ericaugusto-git/discord-clone"><img src="https://github-readme-stats.vercel.app/api/pin/?username=realyoterry&repo=vidclip&theme=ayu-mirage&hide_border=true" alt="vidclip" /></a><a href="https://github.com/ericaugusto-git/portfolio"><img src="https://github-readme-stats.vercel.app/api/pin/?username=realyoterry&repo=realyoterry&theme=ayu-mirage&hide_border=true" alt="portfolio" /></a>
 	<p align="left">
 		<a href="https://github.com/realyoterry?tab=repositories">
 			<img alt="All Repositories" title="All Repositories" src="https://custom-icon-badges.demolab.com/badge/-All%20Repositories-1F222E?style=for-the-badge&logoColor=white&logo=repo" />
