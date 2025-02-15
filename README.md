@@ -6,19 +6,19 @@
 </a>
 
 ```
-> 𝒽𝑒𝓁𝓁𝑜 𝓌𝑜𝓇𝓁𝒹!
+> hello world!
 ```
 
 ---
 
-### 𝑀𝒶𝒾𝓃 𝑅𝑒𝓅𝑜𝓈𝒾𝓉𝑜𝓇𝒾𝑒𝓈
+### Main Repositories
 
 <div align="center">
 	<a href="https://github.com/ericaugusto-git/discord-clone"><img src="https://github-readme-stats.vercel.app/api/pin/?username=realyoterry&repo=vidclip&theme=ayu-mirage&hide_border=true" alt="vidclip" /></a><a href="https://github.com/ericaugusto-git/portfolio"><img src="https://github-readme-stats.vercel.app/api/pin/?username=realyoterry&repo=realyoterry&theme=ayu-mirage&hide_border=true" alt="portfolio" /></a>
 </div>
 
-### 𝑀𝒶𝒾𝓃 𝒮𝓀𝒾𝓁𝓁𝓈
+### Main Skills
 
-<div align="center">
+<div align="left">
 	<a href="https://github.com/realyoterry?tab=repositories"><img src="https://skillicons.dev/icons?i=js,nodejs,ts,python,html,css,astro,svelte,nextjs" /></a>
 </div>
