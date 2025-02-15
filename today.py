@@ -11,6 +11,11 @@ HEADERS = {'authorization': 'token '+ os.getenv('ACCESS_TOKEN')}
 USER_NAME = os.getenv('USER_NAME')
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
+if access_token:
+    print("ACCESS_TOKEN is set")
+else:
+    print("ACCESS_TOKEN is not set or is empty")
+
 def daily_readme(birthday):
     """
     Returns the length of time since I was born
