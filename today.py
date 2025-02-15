@@ -6,8 +6,8 @@ from lxml import etree
 import time
 import hashlib
 
-HEADERS = {'authorization': 'token '+ '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'} # os.environ['ACCESS_TOKEN']
-USER_NAME = 'realyoterry' # os.environ['USER_NAME']
+HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
+USER_NAME = os.environ['USER_NAME']
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
