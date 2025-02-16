@@ -1,7 +1,7 @@
 <a href="https://github.com/realyoterry/realyoterry">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/realyoterry/realyoterry/main/dark_mode.svg">
-    <img alt="Terry Kim's GitHub Profile README" src="https://raw.githubusercontent.com/realyoterry/realyoterry/main/light_mode.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/realyoterry/realyoterry/main/profile/dark_mode.svg">
+    <img alt="Terry Kim's GitHub Profile README" src="https://raw.githubusercontent.com/realyoterry/realyoterry/main/profile/light_mode.svg">
   </picture>
 </a>
 
@@ -9,7 +9,7 @@
 
 ---
 
-<div align="left">Forked from <a href="https://github.com"><picture>
+<div align="left">Credits to <a href="https://github.com"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/realyoterry/realyoterry/main/public/github-dark.svg">
     <img width="15px" alt="GitHub Logo" src="https://raw.githubusercontent.com/realyoterry/realyoterry/main/public/github.svg">
-  </picture></a> <a href="https://github.com/Andrew6rant/Andrew6rant">Andrew6rant/Andrew6rant</a></div>
+  </picture></a> <a href="https://github.com/Andrew6rant/Andrew6rant">Andrew6rant/Andrew6rant</a> for the awesome README idea!</div>
