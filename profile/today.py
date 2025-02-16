@@ -222,7 +222,7 @@ def flush_cache(edges, filename, comment_size):
 
 
 def add_archive():
-    with open('cache/repository_archive.txt', 'r') as f:
+    with open('profile/cache/repository_archive.txt', 'r') as f:
         data = f.readlines()
     old_data = data
     data = data[7:len(data)-3] # remove the comment block    
@@ -237,7 +237,7 @@ def add_archive():
     return [added_loc, deleted_loc, added_loc - deleted_loc, added_commits, contributed_repos]
 
 def force_close_file(data, cache_comment):
-    filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
+    filename = 'profile/cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
     with open(filename, 'w') as f:
         f.writelines(cache_comment)
         f.writelines(data)
