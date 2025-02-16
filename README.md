@@ -22,3 +22,5 @@
 <div align="left">
 	<a href="https://github.com/realyoterry?tab=repositories"><img src="https://skillicons.dev/icons?i=js,nodejs,ts,python,html,css,astro,svelte,nextjs"/></a>
 </div>
+
+Forked from https://github.com/Andrew6rant/Andrew6rant
