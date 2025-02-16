@@ -33,7 +33,7 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ secrets.USER_NAME }}
-        run: echo ${{secrets.SECRET_NAME}} | sed 's/./& /g' && python today.py
+        run: python today.py
       - name: Commit
         run: |-
           git add .

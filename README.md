@@ -1,13 +1,9 @@
 <a href="https://github.com/realyoterry/realyoterry">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/realyoterry/realyoterry/main/dark_mode.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/realyoterry/realyoterry/main/dark_mode.svg">
     <img alt="Terry Kim's GitHub Profile README" src="https://raw.githubusercontent.com/realyoterry/realyoterry/main/light_mode.svg">
   </picture>
 </a>
-
-```
-> hello world!
-```
 
 ---
 
