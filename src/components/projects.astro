@@ -13,13 +13,13 @@ const projects: Project[] = [
     link: 'https://github.com/realyoterry/vidclip',
     preview: 'https://npmjs.com/package/vidclip',
     status: 'NPM Package',
-    image: 'realyoterry/vidclip',
+    image: '/vidclip.svg',
   },
   {
     title: "Terry's Utilities",
     link: 'https://github.com/realyoterry/utilities',
     status: 'Chrome Extension',
-    image: 'realyoterry/utilities',
+    image: '/utilities.svg',
   },
 ];
 ---
@@ -35,7 +35,7 @@ const projects: Project[] = [
           <div class="group">
             <a href={project.preview || project.link} target="_blank" rel="noopener noreferrer" class="block">
               <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
-                <img src={`https://socialify.git.ci/${project.image}/image?description=1&font=Bitter&language=1&name=1&owner=1&pattern=${project.title === 'Vidclip' ? 'Diagonal+Stripes' : 'Brick+Wall'}&theme=Light`} alt={project.title} loading="lazy" class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src={project.image} alt={project.title} loading="lazy" class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div class="flex items-center px-3">
                 <div class="flex-grow">

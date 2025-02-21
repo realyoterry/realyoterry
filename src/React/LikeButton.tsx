@@ -23,7 +23,7 @@ const LikeButton = () => {
     }
 
     if (storedIsLiked) {
-      setIsLiked(storedIsLiked === "true");
+      setIsLiked(storedIsLiked === 'true');
     }
 
     if (!auth.currentUser) {
@@ -63,7 +63,7 @@ const LikeButton = () => {
       const likeDocRef = doc(db, 'likes', 'counter');
       await updateDoc(likeDocRef, { likes: increment(1) });
       setIsLiked(true);
-      localStorage.setItem("websiteIsLiked", "true");
+      localStorage.setItem('websiteIsLiked', 'true');
       triggerLikeAnimation();
     } catch (error) {
       console.error('Error updating likes:', error);

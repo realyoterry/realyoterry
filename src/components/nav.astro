@@ -50,9 +50,11 @@ const navItems: NavItem[] = [
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+
       const target = e.currentTarget as HTMLAnchorElement;
       const targetId = target.getAttribute('href')?.substring(1) || '';
       const targetElement = document.getElementById(targetId);
+
       if (targetElement) {
         targetElement.scrollIntoView({
           behavior: 'smooth',
