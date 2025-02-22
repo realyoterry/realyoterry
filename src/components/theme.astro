@@ -1,12 +1,15 @@
 <script is:inline>
-  const theme = localStorage.getItem('lightMode');
+  let theme = localStorage.getItem('lightMode');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   if (theme === 'true') {
     document.documentElement.classList.add('dark');
   }
 
   if (!theme) {
-    localStorage.setItem('lightMode', 'false');
+    theme = prefersDark ? 'false' : 'true';
+    localStorage.setItem('lightMode', theme);
+    document.documentElement.classList.add('dark');
   }
 
   document.addEventListener('DOMContentLoaded', () => {

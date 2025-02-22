@@ -15,7 +15,6 @@ import ThemeScript from '../components/theme.astro';
     <meta name="description" content="Student Developer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
     <title>{title}</title>
     <ThemeScript />
   </head>
@@ -99,7 +98,7 @@ import ThemeScript from '../components/theme.astro';
   }
 
   body::-webkit-scrollbar-track {
-    background-color: var(--white);
+    background-color: transparent;
   }
 
   @supports not selector(::-webkit-scrollbar) {
