@@ -4,25 +4,20 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import ThemeScript from '../components/theme.astro';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Software Developer" />
+    <meta name="description" content="Student Developer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
-    </noscript>
-
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
     <title>{title}</title>
+    <ThemeScript />
   </head>
   <body class="bg-[--background] md:px-48 lg:px-20 px-9">
     <div class="grid-overlay"></div>
@@ -31,21 +26,41 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities';
+
+  @custom-variant dark (&:where(.dark, .dark *));
+
   :root {
     --background: #101010;
     --sec: #a476ff;
     --white: #dfdfdf;
     --white-icon: #f3f3f398;
     --white-icon-tr: #f3f3f310;
-    --font: 'montserrat', system-ui, sans-serif;
+    --dark-transparent: #1414149c;
   }
 
-  body {
-    overflow: auto;
+  .dark {
+    --background: #e2e7ec;
+    --sec: #8461cb;
+    --white: #1a1a1a;
+    --white-icon: #00000098;
+    --white-icon-tr: #07070810;
+    --dark-transparent: #d3dce39c;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(/monsterrat.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
   * {
-    font-family: var(--font) !important;
+    font-family: 'montserrat', system-ui, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -63,6 +78,10 @@ const { title } = Astro.props;
     background-size: 40px 40px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .dark .grid-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.09) 1px, transparent 1px);
   }
 
   *::selection {

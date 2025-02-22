@@ -6,7 +6,7 @@ const CategoryIcons = {
       <path d="M2 38.5h124v43.71H64v7.29H36.44v-7.29H2Zm6.89 36.43h13.78V53.07h6.89v21.86h6.89V45.79H8.89Zm34.44-29.14v36.42h13.78v-7.28h13.78V45.79Zm13.78 7.29H64v14.56h-6.89Zm20.67-7.29v29.14h13.78V53.07h6.89v21.86h6.89V53.07h6.89v21.86h6.89V45.79Z" />
     </svg>
   ),
-  'Chrome Extensions': (
+  '\u200EChrome Extensions': (
     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-[var(--sec)] opacity-70" viewBox="0 0 190.5 190.5">
       <path fill="#fff" d="M95.252 142.873c26.304 0 47.627-21.324 47.627-47.628s-21.323-47.628-47.627-47.628-47.627 21.324-47.627 47.628 21.323 47.628 47.627 47.628z" />
       <path fill="#735280" d="m54.005 119.07-41.24-71.43a95.227 95.227 0 0 0-.003 95.25 95.234 95.234 0 0 0 82.496 47.61l41.24-71.43v-.011a47.613 47.613 0 0 1-17.428 17.443 47.62 47.62 0 0 1-47.632.007 47.62 47.62 0 0 1-17.433-17.437z" />
@@ -27,7 +27,7 @@ const SkillsList = () => {
 
   const skills = {
     'NPM Packages': ['Global packages (CLI)', 'FFmpeg processing', 'Cryptography libraries (AES)'],
-    'Chrome Extensions': ['Content and background extensions', 'Password managers (with AES encryption)', 'Webpage helpers & service workers'],
+    '\u200EChrome Extensions': ['Content and background extensions', 'Password managers (with AES encryption)', 'Webpage helpers & service workers'],
     'Backend APIs': ['Handy image manipulation', 'Simple REST API for demo websites', 'Encrypted database APIs'],
   };
 
@@ -41,7 +41,7 @@ const SkillsList = () => {
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => (
           <li key={category} className="w-full">
-            <div onClick={() => toggleItem(category)} className="md:w-[400px] w-full bg-[#1414149c] rounded-2xl text-left hover:bg-opacity-80 transition-all border border-[var(--white-icon-tr)] cursor-pointer overflow-hidden">
+            <div onClick={() => toggleItem(category)} className="md:w-[400px] w-full bg-[var(--dark-transparent)] rounded-2xl text-left hover:bg-opacity-80 transition-all border border-[var(--white-icon-tr)] cursor-pointer overflow-hidden">
               <div className="flex items-center gap-3 p-4">
                 {CategoryIcons[category]}
                 <div className="flex items-center gap-2 flex-grow justify-between">

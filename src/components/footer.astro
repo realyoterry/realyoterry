@@ -2,7 +2,7 @@
 import LikeButton from '../React/LikeButton.tsx';
 ---
 
-<footer class="w-full py-12 border-t border-[#ffffff10]">
+<footer class="w-full py-12 border-t border-[#ffffff10] dark:border-[#00000015]">
   <div class="max-w-5xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
       <div class="flex flex-col lg:items-start items-center space-y-6 gap-9">
@@ -65,7 +65,7 @@ import LikeButton from '../React/LikeButton.tsx';
               <div class="flex items-center space-x-3">
                 <span class="text-[var(--white-icon)] text-sm">{tech.desc}</span>
                 <a href={tech.url} class="flex items-center space-x-3" target="_blank">
-                  <img src={tech.icon} alt={tech.alt} class="h-5 w-5 object-contain filter brightness-0 invert opacity-50" loading="lazy" />
+                  <img id={`footer_${tech.name.toLowerCase()}`} src={tech.icon} alt={tech.alt} class="h-5 w-5 object-contain filter brightness-0 [html:not(.dark)_&]:invert opacity-50" loading="lazy" />
                   <span class="text-[var(--white-icon)] text-sm">{tech.name}</span>
                 </a>
               </div>
@@ -81,7 +81,7 @@ import LikeButton from '../React/LikeButton.tsx';
       </div>
     </div>
 
-    <div class="mt-12 pt-8 border-t border-[#ffffff10]">
+    <div class="mt-12 pt-8 border-t border-[#ffffff10] dark:border-[#00000015]">
       <p class="text-center text-sm text-[var(--white-icon)] space-y-2">
         <span class="block sm:inline">
           Copyright © {new Date().getFullYear()}

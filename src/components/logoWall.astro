@@ -13,7 +13,7 @@ const loopedTechnologies = [...technologies];
       {
         loopedTechnologies.map((tech, index) => (
           <div class="flex items-center gap-2 group transition-all duration-300">
-            <img src={`/svg/${tech}.svg`} alt={tech} class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60" width="30" height="30" loading="lazy" />
+            <img id={`image_${tech}`} src={`/svg/${tech}.svg`} alt={tech} class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60" width="30" height="30" loading="lazy" />
             <span class="text-lg font-medium text-[var(--white-icon)]">{tech.charAt(0).toUpperCase() + tech.slice(1)}</span>
           </div>
         ))
@@ -25,7 +25,7 @@ const loopedTechnologies = [...technologies];
       {
         loopedTechnologies.map((tech, index) => (
           <div class="flex items-center gap-2 group transition-all duration-300">
-            <img src={`/svg/${tech}.svg`} alt={tech} class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60" width="30" height="30" loading="lazy" />
+            <img id={`image1_${tech}`}src={`/svg/${tech}.svg`} alt={tech} class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60" width="30" height="30" loading="lazy" />
             <span class="text-lg font-medium text-[var(--white-icon)]">{tech.charAt(0).toUpperCase() + tech.slice(1)}</span>
           </div>
         ))
@@ -33,6 +33,21 @@ const loopedTechnologies = [...technologies];
     </div>
   </div>
 </div>
+
+<script>
+  const astroImage = document.getElementById('image_astro') as HTMLImageElement;
+  const astroImage1 = document.getElementById('image1_astro') as HTMLImageElement;
+
+  window.addEventListener('themeChange', (event: CustomEvent) => {
+    if (event.detail === 'light') {
+      astroImage.src = '/svg/astrolight.svg';
+      astroImage1.src = '/svg/astrolight.svg';
+    } else {
+      astroImage.src = '/svg/astro.svg';
+      astroImage1.src = '/svg/astro.svg';
+    }
+  })
+</script>
 
 <style is:global>
   @keyframes scroll {

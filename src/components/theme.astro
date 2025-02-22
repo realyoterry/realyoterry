@@ -1,0 +1,28 @@
+<script is:inline>
+  const theme = localStorage.getItem('lightMode');
+
+  if (theme === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+
+  if (!theme) {
+    localStorage.setItem('lightMode', 'false');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+
+    if (theme === 'false') {
+        window.dispatchEvent(new CustomEvent('themeChange', { detail: 'dark' }));
+      sunIcon.classList.add('opacity-0');
+      moonIcon.classList.remove('opacity-0');
+    }
+
+    if (theme === 'true') {
+        window.dispatchEvent(new CustomEvent('themeChange', { detail: 'light' }));
+      sunIcon.classList.remove('opacity-0');
+      moonIcon.classList.add('opacity-0');
+    }
+  });
+</script>
